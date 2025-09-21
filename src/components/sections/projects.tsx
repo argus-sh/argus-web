@@ -24,7 +24,9 @@ export function Projects() {
     const loadRepos = async () => {
       try {
         const data = await fetchOrgRepos();
-        const filteredRepos = data.filter((repo) => repo.name !== ".github");
+        const filteredRepos = data.filter(
+          (repo) => repo.name !== ".github" && repo.name !== "argus-web",
+        );
         setRepos(filteredRepos);
       } catch (error) {
         console.error("Failed to load repos:", error);
