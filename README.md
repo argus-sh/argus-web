@@ -1,36 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Argus SH - Official Website
 
-## Getting Started
+A beautifully designed website for the Argus SH organization, showcasing our CLI tools and philosophy.
 
-First, run the development server:
+## 🚀 Features
 
+- **Modern Design**: Inspired by Vercel, Next.js, and Trump Card designs
+- **Dark/Light Themes**: Automatic theme switching with system preference support
+- **Responsive**: Fully responsive across all devices
+- **Smooth Animations**: Fluid animations powered by Framer Motion
+- **GitHub Integration**: Real-time project data from the Argus SH organization
+- **Type-Safe**: Built with TypeScript and modern React patterns
+- **Performance Optimized**: Built with Next.js 15 and optimized for speed
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Styling**: Tailwind CSS with custom design system
+- **Components**: shadcn/ui component library
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Theme**: next-themes for dark/light mode
+- **TypeScript**: Full type safety throughout
+
+## 🏃‍♂️ Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- Bun (recommended) or npm/yarn/pnpm
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/argus-sh/argus-web.git
+cd argus-web
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+bun install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+bun run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/                    # Next.js app directory
+│   ├── layout.tsx         # Root layout with theme provider
+│   ├── page.tsx          # Main page
+│   └── globals.css       # Global styles and CSS variables
+├── components/            # Reusable components
+│   ├── ui/               # shadcn/ui components
+│   ├── magicui/          # Custom animated components
+│   ├── sections/         # Page sections
+│   └── navigation.tsx    # Navigation component
+└── lib/                  # Utilities and API functions
+    ├── utils.ts          # Utility functions
+    ├── github.ts         # GitHub API integration
+    └── types.ts          # TypeScript type definitions
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Design System
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The website uses a carefully crafted design system with:
 
-## Deploy on Vercel
+- **Colors**: Blue to purple gradient theme
+- **Typography**: Geist font family for modern look
+- **Spacing**: Consistent spacing scale
+- **Animations**: Smooth, purposeful animations
+- **Components**: Reusable, accessible components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 GitHub Integration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The website automatically fetches and displays:
+
+- Repository information
+- Star counts and fork metrics
+- Topics and languages
+- Last updated dates
+- Direct links to GitHub
+
+## 🚀 Deployment
+
+The easiest way to deploy is using Vercel:
+
+```bash
+bun run build
+```
+
+Then deploy to Vercel or your preferred platform.
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guide](https://github.com/argus-sh/argus-ts/blob/main/CONTRIBUTING.md) for details.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🔗 Links
+
+- [Argus SH Organization](https://github.com/argus-sh)
+- [Argus TS Framework](https://github.com/argus-sh/argus-ts)
+- [Documentation](https://argus.sh/docs)
+
+---
+
+Built with ❤️ by the Argus SH team
